@@ -1,0 +1,45 @@
+{
+  "name": "helix-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Helix Workspace \u2014 an original design engineering case study: a scientific data-analysis product concept built with React, TypeScript and Tailwind.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "d3-quadtree": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "lucide-react": "^0.577.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@types/d3-quadtree": "^3.0.6",
+    "@types/d3-scale": "^4.0.9",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.29",
+    "prettier": "^3.9.10",
+    "tailwindcss": "3.4",
+    "typescript": "5.9",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^6.4.4"
+  }
+}

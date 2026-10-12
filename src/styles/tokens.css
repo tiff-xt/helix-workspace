@@ -1,0 +1,93 @@
+/*
+ * Design tokens.
+ * Colors are stored as RGB channels so Tailwind can apply opacity
+ * (e.g. `bg-accent/10`). A theme is just a different set of values for the
+ * same names — components never reference a theme directly.
+ *
+ * Themes are scoped by [data-theme], so any subtree can opt into a theme
+ * (the design-system page renders light and dark side by side this way).
+ */
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: 246 246 247;
+  --surface: 255 255 255;
+  --surface-2: 250 250 251;
+  --surface-3: 241 241 243;
+  --border: 228 228 232;
+  --border-strong: 208 208 214;
+
+  --fg: 18 18 22;
+  --fg-muted: 70 70 80;
+  --fg-subtle: 104 104 116;
+
+  --accent: 69 73 201;
+  --accent-hover: 56 60 182;
+  --accent-fg: 255 255 255;
+  --accent-subtle: 237 238 252;
+  --accent-text: 60 64 186;
+
+  --success: 21 122 58;
+  --success-subtle: 233 246 237;
+  --warning: 146 88 4;
+  --warning-subtle: 252 244 224;
+  --danger: 190 38 38;
+  --danger-subtle: 252 236 236;
+  --danger-solid: 196 43 43;
+
+  --ring: 69 73 201;
+
+  /* Data visualization: a diverging pair + neutral midpoint. */
+  --viz-up: 214 64 63;
+  --viz-down: 42 120 214;
+  --viz-ns: 186 186 194;
+  --viz-grid: 232 232 236;
+
+  --shadow-xs: 0 1px 1px rgb(16 16 24 / 0.04);
+  --shadow-sm: 0 1px 2px rgb(16 16 24 / 0.06), 0 0 0 1px rgb(16 16 24 / 0.02);
+  --shadow-md: 0 4px 12px -2px rgb(16 16 24 / 0.08), 0 2px 4px -2px rgb(16 16 24 / 0.05);
+  --shadow-lg: 0 16px 40px -12px rgb(16 16 24 / 0.18), 0 4px 12px -4px rgb(16 16 24 / 0.08);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: 11 11 13;
+  --surface: 20 20 23;
+  --surface-2: 25 25 29;
+  --surface-3: 34 34 39;
+  --border: 41 41 47;
+  --border-strong: 60 60 68;
+
+  --fg: 236 236 240;
+  --fg-muted: 180 180 190;
+  --fg-subtle: 142 142 154;
+
+  --accent: 88 92 222;
+  --accent-hover: 104 108 232;
+  --accent-fg: 255 255 255;
+  --accent-subtle: 33 34 66;
+  --accent-text: 166 169 248;
+
+  --success: 92 200 128;
+  --success-subtle: 20 44 30;
+  --warning: 230 182 76;
+  --warning-subtle: 48 38 16;
+  --danger: 244 120 120;
+  --danger-subtle: 56 24 26;
+  --danger-solid: 200 52 52;
+
+  --ring: 140 144 250;
+
+  --viz-up: 230 103 103;
+  --viz-down: 57 135 229;
+  --viz-ns: 82 82 92;
+  --viz-grid: 36 36 42;
+
+  --shadow-xs: 0 1px 1px rgb(0 0 0 / 0.3);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4), 0 0 0 1px rgb(255 255 255 / 0.02);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 16px 40px -12px rgb(0 0 0 / 0.7), 0 4px 12px -4px rgb(0 0 0 / 0.5);
+}

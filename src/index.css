@@ -1,0 +1,117 @@
+@import './styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 4.5rem;
+  }
+
+  body {
+    @apply bg-bg font-sans text-base text-fg antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  /* One focus treatment everywhere; components can refine but never remove it. */
+  :focus-visible {
+    outline: 2px solid rgb(var(--ring));
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: rgb(var(--accent) / 0.22);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply outline-none is-focus:outline is-focus:outline-2 is-focus:outline-offset-2 is-focus:outline-ring;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--border-strong)) transparent;
+  }
+}
+
+/* Motion is a progressive enhancement. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Native range input, styled with tokens. */
+input[type='range'].range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range'].range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to right, rgb(var(--accent)) 0 var(--fill, 50%), rgb(var(--surface-3)) var(--fill, 50%) 100%);
+}
+input[type='range'].range::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgb(var(--surface-3));
+}
+input[type='range'].range::-moz-range-progress {
+  height: 4px;
+  border-radius: 999px;
+  background: rgb(var(--accent));
+}
+input[type='range'].range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgb(var(--surface));
+  border: 1px solid rgb(var(--border-strong));
+  box-shadow: var(--shadow-sm);
+}
+input[type='range'].range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgb(var(--surface));
+  border: 1px solid rgb(var(--border-strong));
+  box-shadow: var(--shadow-sm);
+}
+input[type='range'].range:focus-visible {
+  outline: none;
+}
+input[type='range'].range:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+input[type='range'].range:focus-visible::-moz-range-thumb {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+input[type='range'].range:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Grayscale preview used by the accessibility section. */
+.grayscale-preview {
+  filter: grayscale(1);
+}
