@@ -1,7 +1,7 @@
 # Helix Workspace
 
 **Designing clarity into complex scientific workflows.**
-An original design engineering case study: a fictional research tool for inspecting gene-expression results and deciding what to investigate next. I designed and built it end to end: the product, the component system and the interactions.
+An original design engineering case study: a fictional research tool for inspecting gene-expression results and deciding what to investigate next. I designed and built it end to end, from the product workflow and data layer through the component architecture, visualization, and interactions.
 
 **Live site:** `https://tiff-xt.github.io/helix-workspace/`
 

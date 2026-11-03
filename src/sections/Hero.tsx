@@ -14,8 +14,8 @@ export function Hero() {
           </h1>
           <p className="mt-2 text-xl font-normal text-fg-muted">Designing clarity into complex scientific workflows</p>
           <p className="mt-5 text-md text-fg-muted">
-            A research tool for inspecting gene-expression results and deciding what to investigate next. I designed and built it end to end
-            — the product, the component system and the interactions — to show how I approach dense, technical interfaces.
+            A research tool for inspecting gene-expression results and deciding what to investigate next. I designed and built it end to
+            end, from the product workflow and data layer through the component architecture, visualization, and interactions.
           </p>
           <p className="mt-3 text-sm text-fg-subtle">
             This is an original, non-proprietary case study. The product, brand, code and data are fictional and were made from scratch for
@@ -35,7 +35,7 @@ export function Hero() {
         <dl className="grid gap-4 rounded-lg border border-border bg-surface p-5 text-sm shadow-xs">
           <div>
             <dt className="text-xs font-medium text-fg-subtle">Role</dt>
-            <dd className="mt-0.5 font-medium text-fg">Product Design + Frontend Engineering</dd>
+            <dd className="mt-0.5 font-medium text-fg">Product Engineering + Frontend Architecture</dd>
           </div>
           <div>
             <dt className="text-xs font-medium text-fg-subtle">Focus</dt>
@@ -46,6 +46,10 @@ export function Hero() {
                 </span>
               ))}
             </dd>
+          </div>
+          <div>
+            <dt className="text-xs font-medium text-fg-subtle">Architecture</dt>
+            <dd className="mt-0.5 text-fg-muted">Typed async data layer, shared state, reusable components, visualization pipeline</dd>
           </div>
           <div>
             <dt className="text-xs font-medium text-fg-subtle">Built with</dt>
