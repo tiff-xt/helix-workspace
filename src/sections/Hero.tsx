@@ -15,7 +15,7 @@ export function Hero() {
           <p className="mt-2 text-xl font-normal text-fg-muted">Designing clarity into complex scientific workflows</p>
           <p className="mt-5 text-md text-fg-muted">
             A research tool for inspecting gene-expression results and deciding what to investigate next. I designed and built it end to end
-            — the product, the component system and the interactions — to show how I approach dense, technical interfaces.
+            (the product, the component system and the interactions) to show how I approach dense, technical interfaces.
           </p>
           <p className="mt-3 text-sm text-fg-subtle">
             This is an original, non-proprietary case study. The product, brand, code and data are fictional and were made from scratch for

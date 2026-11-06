@@ -16,12 +16,12 @@ export function DesignSystemSection() {
   return (
     <Section
       id="system"
-      index="04 — Design system"
+      index="04 · Design system"
       title="One set of parts, built to be reused"
       lede={
         <p>
           Every screen above is assembled from the components on this page. Colors, type and spacing are tokens; themes are just a different
-          set of token values. The theme toggle in the header switches the whole page — including the product.
+          set of token values. The theme toggle in the header switches the whole page, including the product.
         </p>
       }
     >

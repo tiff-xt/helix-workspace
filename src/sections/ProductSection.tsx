@@ -24,7 +24,7 @@ export function ProductSection() {
   return (
     <Section
       id="product"
-      index="01 — Product"
+      index="01 · Product"
       title="A workspace for deciding what to investigate next"
       width="wide"
       lede={

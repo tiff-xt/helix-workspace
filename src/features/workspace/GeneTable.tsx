@@ -89,7 +89,7 @@ export function GeneTable({ pageSize = 12, compact = false, title = 'Genes' }: G
       </div>
 
       {genes.status === 'loading' ? (
-        <div aria-busy="true" aria-label="Loading genes" className="space-y-2 border-t border-border p-4">
+        <div role="status" aria-busy="true" aria-label="Loading genes" className="space-y-2 border-t border-border p-4">
           {Array.from({ length: 6 }, (_, i) => (
             <Skeleton key={i} className="h-6 w-full" />
           ))}
@@ -151,7 +151,7 @@ export function GeneTable({ pageSize = 12, compact = false, title = 'Genes' }: G
                         {shortlist.has(g.id) && <Star aria-label="On shortlist" className="size-3 fill-warning text-warning" />}
                       </button>
                     </Td>
-                    {!compact && <Td className="hidden max-w-[12rem] truncate lg:table-cell">{g.pathways[0] ?? '—'}</Td>}
+                    {!compact && <Td className="hidden max-w-[12rem] truncate lg:table-cell">{g.pathways[0] ?? '–'}</Td>}
                     <Td align="right" className={cn('font-medium', r === 'up' ? 'text-fg' : r === 'down' ? 'text-fg' : 'text-fg-subtle')}>
                       {formatFc(g.log2FoldChange)}
                     </Td>

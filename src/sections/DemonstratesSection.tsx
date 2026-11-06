@@ -19,7 +19,7 @@ const ITEMS: Array<{ skill: string; where: string; href: string }> = [
 
 export function DemonstratesSection() {
   return (
-    <Section id="demonstrates" index="07 — Scope" title="What this demonstrates">
+    <Section id="demonstrates" index="07 · Scope" title="What this demonstrates">
       <ul className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
         {ITEMS.map((item) => (
           <li key={item.skill} className="bg-surface">
