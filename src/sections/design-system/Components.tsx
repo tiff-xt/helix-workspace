@@ -41,7 +41,7 @@ export function ButtonMatrix() {
   return (
     <Specimen
       title="Buttons"
-      description="Every state below is rendered by the production component — forced with a data attribute, not restyled."
+      description="Every state below is rendered by the production component, forced with a data attribute, not restyled."
       className="lg:col-span-2"
     >
       <div className="scrollbar-thin -mx-4 overflow-x-auto px-4">
@@ -285,7 +285,7 @@ export function LoadingEmptySpecimen() {
   return (
     <Specimen title="Loading & empty" description="Skeletons match the final layout; empty states explain why." className="lg:col-span-2">
       <div className="grid gap-3 sm:grid-cols-2">
-        <div aria-busy="true" aria-label="Loading example" className="rounded-md border border-border p-3">
+        <div role="status" aria-busy="true" aria-label="Loading example" className="rounded-md border border-border p-3">
           <Skeleton className="h-4 w-24" />
           <Skeleton className="mt-3 h-3 w-full" />
           <Skeleton className="mt-1.5 h-3 w-4/5" />

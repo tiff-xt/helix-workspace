@@ -23,7 +23,7 @@ function Connector({ done }: { done: boolean }) {
 export function WorkflowPipeline({ steps, onRetry, className }: WorkflowPipelineProps) {
   if (!steps) {
     return (
-      <div aria-busy="true" aria-label="Loading workflow" className={cn('@container', className)}>
+      <div role="status" aria-busy="true" aria-label="Loading workflow" className={cn('@container', className)}>
         <div className="flex flex-col gap-2 @4xl:flex-row">
           {Array.from({ length: 5 }, (_, i) => (
             <div key={i} className="flex-1 rounded-lg border border-border bg-surface p-3">

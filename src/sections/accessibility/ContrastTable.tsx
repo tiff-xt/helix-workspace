@@ -68,7 +68,7 @@ export function ContrastTable() {
                       {p.fg} / {p.bg}
                     </span>
                   </td>
-                  <td className="tabular px-2 py-2 text-right font-semibold text-fg">{ratio ? `${ratio.toFixed(1)}:1` : '—'}</td>
+                  <td className="tabular px-2 py-2 text-right font-semibold text-fg">{ratio ? `${ratio.toFixed(1)}:1` : '–'}</td>
                   <td className="px-4 py-2">
                     {ratio !== null && (
                       <span className={`inline-flex items-center gap-1 text-xs font-medium ${pass ? 'text-success' : 'text-warning'}`}>

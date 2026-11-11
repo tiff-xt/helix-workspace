@@ -2,7 +2,7 @@
   "name": "helix-workspace",
   "private": true,
   "version": "1.0.0",
-  "description": "Helix Workspace \u2014 an original design engineering case study: a scientific data-analysis product concept built with React, TypeScript and Tailwind.",
+  "description": "Helix Workspace — an original design engineering case study: a scientific data-analysis product concept built with React, TypeScript and Tailwind.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -31,6 +31,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.6.1",
+    "axe-core": "^4.14.0",
     "eslint": "^9.39.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.26",

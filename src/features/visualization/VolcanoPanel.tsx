@@ -63,7 +63,12 @@ export function VolcanoPanel() {
       </div>
       <div className="px-2 pb-3 pt-4 sm:px-4">
         {genes.status === 'loading' && (
-          <div aria-busy="true" aria-label="Loading expression results" className="flex h-[300px] flex-col gap-3 sm:h-[400px]">
+          <div
+            role="status"
+            aria-busy="true"
+            aria-label="Loading expression results"
+            className="flex h-[300px] flex-col gap-3 sm:h-[400px]"
+          >
             <div className="relative flex-1">
               <Skeleton className="absolute inset-0 rounded-md" />
               <div className="absolute inset-0 flex items-center justify-center">

@@ -27,7 +27,7 @@ export function DatasetsView() {
       )}
       <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-xs">
         {state.status === 'loading' ? (
-          <div aria-busy="true" aria-label="Loading datasets" className="space-y-2 p-4">
+          <div role="status" aria-busy="true" aria-label="Loading datasets" className="space-y-2 p-4">
             {Array.from({ length: 4 }, (_, i) => (
               <Skeleton key={i} className="h-8 w-full" />
             ))}

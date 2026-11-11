@@ -3,7 +3,7 @@ import { Section } from '@/components/Section'
 const DECISIONS = [
   {
     title: 'Dense information needs a clear order',
-    body: 'Expression results have thousands of rows and a dozen numbers per gene. Showing all of it at once makes nothing stand out. The interface leads with the answer — how many genes changed and in which direction — then the plot, then the table, then the details. Each layer is denser than the one before.',
+    body: 'Expression results have thousands of rows and a dozen numbers per gene. Showing all of it at once makes nothing stand out. The interface leads with the answer (how many genes changed and in which direction), then the plot, then the table, then the details. Each layer is denser than the one before.',
   },
   {
     title: 'Progressive disclosure keeps the first view calm',
@@ -23,7 +23,7 @@ const DECISIONS = [
   },
   {
     title: 'Accessibility belongs in the system, not the screen',
-    body: 'Contrast is a token decision. Focus styling is a base style. Labels are required props. When accessibility lives in the foundation, each new screen inherits it instead of re-solving it — and audits find fewer surprises.',
+    body: 'Contrast is a token decision. Focus styling is a base style. Labels are required props. When accessibility lives in the foundation, each new screen inherits it instead of re-solving it, and audits find fewer surprises.',
   },
   {
     title: 'Shared patterns make the team faster',
@@ -35,7 +35,7 @@ export function DecisionsSection() {
   return (
     <Section
       id="decisions"
-      index="06 — Design decisions"
+      index="06 · Design decisions"
       title="Design decisions"
       lede={<p>The reasoning behind what you’ve seen above, in brief.</p>}
     >

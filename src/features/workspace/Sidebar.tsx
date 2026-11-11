@@ -12,11 +12,8 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
 
   return (
     <div className="flex h-full flex-col">
-      <button
-        type="button"
-        className="focus-ring m-2 flex items-center gap-2 rounded-md px-2 py-1.5 text-left is-hover:bg-surface-3"
-        aria-label="Switch workspace: Okafor Lab"
-      >
+      <button type="button" className="focus-ring m-2 flex items-center gap-2 rounded-md px-2 py-1.5 text-left is-hover:bg-surface-3">
+        <span className="sr-only">Switch workspace: </span>
         <span aria-hidden className="flex size-6 items-center justify-center rounded bg-fg text-2xs font-bold text-bg">
           OL
         </span>

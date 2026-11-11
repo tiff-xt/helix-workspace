@@ -27,7 +27,7 @@ export function GeneInspector({ className }: { className?: string }) {
 
   if (genes.status === 'loading') {
     return (
-      <div aria-busy="true" aria-label="Loading gene details" className={cn('space-y-3 p-4', className)}>
+      <div role="status" aria-busy="true" aria-label="Loading gene details" className={cn('space-y-3 p-4', className)}>
         <Skeleton className="h-5 w-24" />
         <Skeleton className="h-3 w-3/4" />
         <Skeleton className="mt-4 h-16 w-full" />
@@ -84,7 +84,7 @@ export function GeneInspector({ className }: { className?: string }) {
         {[
           ['p-value', formatP(gene.pValue), gene.pValue <= thresholds.pValue ? 'Passes' : 'Above threshold'],
           ['Adjusted p', formatP(gene.padj), 'Benjamini–Hochberg'],
-          ['Mean expression', formatInt(gene.baseMean), gene.baseMean < 100 ? 'Low — interpret with care' : 'Normalized counts'],
+          ['Mean expression', formatInt(gene.baseMean), gene.baseMean < 100 ? 'Low: interpret with care' : 'Normalized counts'],
           ['Chromosome', gene.chromosome, gene.annotated ? 'Annotated' : 'Synthetic'],
         ].map(([label, value, note]) => (
           <div key={label} className="bg-surface p-2.5">

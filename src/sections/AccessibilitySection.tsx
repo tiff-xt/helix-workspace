@@ -18,11 +18,11 @@ export function AccessibilitySection() {
   return (
     <Section
       id="accessibility"
-      index="05 — Accessibility"
+      index="05 · Accessibility"
       title="Accessibility is built into the components"
       lede={
         <p>
-          Researchers spend hours in tools like this, often on dense screens. Accessibility here isn’t a checklist at the end — it lives in
+          Researchers spend hours in tools like this, often on dense screens. Accessibility here isn’t a checklist at the end. It lives in
           the tokens and components, so every screen gets it by default. The parts below are live.
         </p>
       }
@@ -67,8 +67,8 @@ export function AccessibilitySection() {
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Note title="Visible focus, everywhere">
-          One focus ring, defined once in the base styles and used by every component. It’s never removed — try pressing Tab anywhere on
-          this page.
+          One focus ring, defined once in the base styles and used by every component. It’s never removed: try pressing Tab anywhere on this
+          page.
         </Note>
         <Note title="A table behind every chart">
           The plot is keyboard navigable and announces each gene, but the gene table holds the same data and selection. Some people will
@@ -79,7 +79,7 @@ export function AccessibilitySection() {
           errors connected with aria-describedby.
         </Note>
         <Note title="Announced changes">
-          Async results — assistant answers, workflow retries, pagination — are announced through polite live regions. Loading regions are
+          Async results (assistant answers, workflow retries, pagination) are announced through polite live regions. Loading regions are
           marked aria-busy.
         </Note>
         <Note title="Labels on every control">

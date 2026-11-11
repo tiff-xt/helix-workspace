@@ -12,7 +12,7 @@ export function ReportsView() {
         <EmptyState
           icon={<FileText />}
           title="No reports yet"
-          description="Reports are generated from a finished gene prioritization. It’s 64% complete — you can draft one as soon as it finishes."
+          description="Reports are generated from a finished gene prioritization. It’s 64% complete. You can draft one as soon as it finishes."
           action={
             <>
               <Button variant="primary" size="sm" disabled leadingIcon={<Lock className="size-3.5" />}>

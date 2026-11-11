@@ -76,7 +76,7 @@ export function ResearchAssistant({ onInspect }: ResearchAssistantProps) {
   return (
     <section
       ref={rootRef}
-      aria-labelledby="assistant-title"
+      aria-labelledby="research-assistant-title"
       className="flex flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-xs"
     >
       <header className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
@@ -84,7 +84,7 @@ export function ResearchAssistant({ onInspect }: ResearchAssistantProps) {
           <span aria-hidden className="flex size-6 items-center justify-center rounded bg-accent-subtle text-accent-text">
             <Sparkles className="size-3.5" />
           </span>
-          <h3 id="assistant-title" className="text-base font-semibold text-fg">
+          <h3 id="research-assistant-title" className="text-base font-semibold text-fg">
             Research Assistant
           </h3>
         </div>
@@ -143,7 +143,7 @@ export function ResearchAssistant({ onInspect }: ResearchAssistantProps) {
           <div className="flex h-full flex-col items-center justify-center gap-2 py-10 text-center">
             <p className="text-sm font-medium text-fg">Ask a question to get a structured suggestion</p>
             <p className="max-w-xs text-sm text-fg-subtle">
-              Answers cite values from the current analysis, state their confidence, and propose a next step — you decide what to act on.
+              Answers cite values from the current analysis, state their confidence, and propose a next step. You decide what to act on.
             </p>
           </div>
         )}

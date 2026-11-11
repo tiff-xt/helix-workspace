@@ -15,12 +15,12 @@ export function AssistantSection() {
   return (
     <Section
       id="assistant"
-      index="03 — AI assistance"
+      index="03 · AI assistance"
       title="An assistant that shows its work"
       lede={
         <p>
-          AI is useful here for one narrow job: pointing out which results deserve a closer look. The design keeps the researcher in charge
-          — every suggestion is grounded in the project’s own numbers and ends with a next step, not a conclusion.
+          AI is useful here for one narrow job: pointing out which results deserve a closer look. The design keeps the researcher in charge.
+          Every suggestion is grounded in the project’s own numbers and ends with a next step, not a conclusion.
         </p>
       }
     >
@@ -36,8 +36,8 @@ export function AssistantSection() {
             model can’t back up.
           </Note>
           <Note title="Connected to the work">
-            “Inspect in plot” takes you to the gene in the workspace. Nothing is added to the analysis automatically — shortlisting is
-            always a deliberate action.
+            “Inspect in plot” takes you to the gene in the workspace. Nothing is added to the analysis automatically. Shortlisting is always
+            a deliberate action.
           </Note>
           <Note title="Scope is visible">
             Each answer states what it was based on and how the question was interpreted, so a misunderstanding is caught before it matters.

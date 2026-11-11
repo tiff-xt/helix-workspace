@@ -5,12 +5,12 @@ export function WorkflowSection() {
   return (
     <Section
       id="workflow"
-      index="02 — Workflow"
+      index="02 · Workflow"
       title="Making pipeline state obvious at a glance"
       lede={
         <p>
           Analyses run as a chain. When something goes wrong, researchers need to know which step failed, why, and what happens to
-          everything downstream — without reading logs.
+          everything downstream, without reading logs.
         </p>
       }
     >

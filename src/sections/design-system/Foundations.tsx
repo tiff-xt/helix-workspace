@@ -27,7 +27,7 @@ export function ColorTokens() {
                   <li key={t} className="min-w-0">
                     <span className="block h-9 rounded border border-border" style={{ background: `rgb(var(--${t}))` }} />
                     <span className="mt-1 block truncate font-mono text-2xs text-fg">{t}</span>
-                    <span className="block font-mono text-2xs uppercase text-fg-subtle">{v ? toHex(v) : '—'}</span>
+                    <span className="block font-mono text-2xs uppercase text-fg-subtle">{v ? toHex(v) : '–'}</span>
                   </li>
                 )
               })}

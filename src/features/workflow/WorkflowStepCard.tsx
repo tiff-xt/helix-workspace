@@ -70,7 +70,7 @@ export function WorkflowStepCard({ step, index, onRetry }: WorkflowStepCardProps
           {statusText}
         </span>
       </div>
-      <h4 className={cn('mt-2 text-base font-semibold', step.status === 'pending' ? 'text-fg-muted' : 'text-fg')}>{step.name}</h4>
+      <h3 className={cn('mt-2 text-base font-semibold', step.status === 'pending' ? 'text-fg-muted' : 'text-fg')}>{step.name}</h3>
       <p className="mt-0.5 text-sm text-fg-subtle">{step.description}</p>
 
       <div className="mt-auto pt-3">
